@@ -6,10 +6,16 @@ namespace Max_Generics
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("UseCase 3 Find Max String  Number");
 
-            string stringOutput = MaxNumberCheck_String.MaxNumbermethod_String("Apple", "Banana", "Peach");
-            Console.Write(stringOutput);
+            Console.WriteLine("Find Max Int  Number using Generic Method");
+            Refactor_to_generic<int>.FindMax<int>(11, 22, 9, 44);
+
+            Console.WriteLine("Find Max Double  Number using Generic Method");
+            Refactor_to_generic<double>.FindMax<double>(11.3, 22.23, 9.55, 30.5);
+
+            Console.WriteLine("Find Max String Number using Generic Method");
+            Refactor_to_generic<double>.FindMax<string>("Apple", "Banana", "Orange", "Peach");
+
         }
     }
 }
